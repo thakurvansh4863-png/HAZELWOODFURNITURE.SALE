@@ -1,0 +1,104 @@
+:root {
+    --color-primary: #111111;
+    --color-accent: #D4AF37; /* Gold */
+    --color-light-grey: #f3f3f3;
+    --font-heading: 'Poppins', sans-serif;
+    --font-paragraph: 'Inter', sans-serif;
+    --spacing-section: 80px;
+    --spacing-gap: 24px;
+    --border-radius: 12px;
+}
+
+body {
+    font-family: var(--font-paragraph);
+    color: var(--color-primary);
+    margin: 0;
+}
+
+/* Header Style */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    border-bottom: 1px solid var(--color-light-grey);
+}
+.header .logo {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+/* Hero Section */
+.hero {
+    padding: var(--spacing-section) 80px;
+    text-align: center;
+}
+.hero h1 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+/* Category Section (Grid) */
+.section-padding {
+    padding: var(--spacing-section) 80px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-gap);
+}
+
+.card {
+    border: 1px solid var(--color-light-grey);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03); 
+}
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.card h3 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    margin-top: 0;
+}
+
+/* Buttons (Gold Accent) */
+.button-primary, .button-secondary {
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+    font-weight: 500;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.button-primary {
+    background-color: var(--color-accent);
+    color: #ffffff;
+}
+.button-primary:hover {
+    background-color: #c09f2d; 
+}
+.button-secondary {
+    background-color: transparent;
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-primary); 
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 0;
+}
